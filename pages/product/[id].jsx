@@ -104,7 +104,7 @@ const Product = () => {
   return (
     <div className="max-w-7xl mx-auto">
       <Head>
-        <title>Phillipine Card Marketplace</title>
+        <title>Crescendo Learning</title>
         <link rel="icon" href="/pcm.png" />
       </Head>
 

@@ -77,7 +77,7 @@ export default function Chat() {
   return (
     <div>
       <Head>
-        <title>Phillipine Card Marketplace</title>
+        <title>Crescendo Learning</title>
         <link rel="icon" href="/pcm.png" />
       </Head>
       <NavigationBar />
@@ -89,101 +89,104 @@ export default function Chat() {
           <h4 className="text-light fw-bold">Order Details:</h4>
           <ListGroup
             className="message-container overflow-auto pt-2 ps-1"
-            style={{ maxHeight: "600px"}}
+            style={{ maxHeight: "600px" }}
           >
             {orders?.docs.length > 0 ? (
               orders?.docs
-              .filter(
-                (order) => order.data().email === localStorage.getItem("email")
-              )
-              .map((order, index) => (
-                <ListGroup.Item key={index}>
-                  <div className="checkoutContainer ">
-                    <div className="m-2" style={{ cursor: "pointer" }}>
-                      <img
-                        src={
-                          order.data().image
-                            ? order.data().image
-                            : "/screenshot.png"
-                        }
-                        alt="order image"
-                        width="120"
-                        height="120"
-                        style={{ cursor: "pointer" }}
-                        onClick={() => handleButtonClick(order.id)}
-                      />
-                      <input
-                        type="file"
-                        id="fileInput"
-                        style={{ display: "none" }}
-                        accept="image/*"
-                        onChange={handleFileChange}
-                      />
-                    </div>
-                    <div className="m-3">
-                      <h6>Order Id:{order.id}</h6>
-                      <p className="fs-6">
-                        Price: ₱{order.data().totalPrice.toLocaleString()}
-                      </p>
-                      <p className="fs-6">
-                        {new Date(
-                          order?.data().timestamp?.seconds * 1000
-                        ).toLocaleDateString()}
-                      </p>
-                    </div>
-                    <div>
-                      {order?.data().order.map((product, index) => (
-                        <div
-                          key={index}
-                          style={{
-                            display: "flex",
-                            justifyContent: "space-between",
-                          }}
-                        >
-                          <p>
-                            {product.productName} (
-                            {product.quantitySelected
-                              ? product.quantitySelected
-                              : 1}
-                            )
-                          </p>
-                        </div>
-                      ))}
-                    </div>
-                    <div
-                      className="px-2"
-                      style={{
-                        display: "flex",
-                        justifyContent: "space-between",
-                        alignItems: "center",
-                      }}
-                    >
+                .filter(
+                  (order) =>
+                    order.data().email === localStorage.getItem("email")
+                )
+                .map((order, index) => (
+                  <ListGroup.Item key={index}>
+                    <div className="checkoutContainer ">
+                      <div className="m-2" style={{ cursor: "pointer" }}>
+                        <img
+                          src={
+                            order.data().image
+                              ? order.data().image
+                              : "/screenshot.png"
+                          }
+                          alt="order image"
+                          width="120"
+                          height="120"
+                          style={{ cursor: "pointer" }}
+                          onClick={() => handleButtonClick(order.id)}
+                        />
+                        <input
+                          type="file"
+                          id="fileInput"
+                          style={{ display: "none" }}
+                          accept="image/*"
+                          onChange={handleFileChange}
+                        />
+                      </div>
+                      <div className="m-3">
+                        <h6>Order Id:{order.id}</h6>
+                        <p className="fs-6">
+                          Price: ₱{order.data().totalPrice.toLocaleString()}
+                        </p>
+                        <p className="fs-6">
+                          {new Date(
+                            order?.data().timestamp?.seconds * 1000
+                          ).toLocaleDateString()}
+                        </p>
+                      </div>
+                      <div>
+                        {order?.data().order.map((product, index) => (
+                          <div
+                            key={index}
+                            style={{
+                              display: "flex",
+                              justifyContent: "space-between",
+                            }}
+                          >
+                            <p>
+                              {product.productName} (
+                              {product.quantitySelected
+                                ? product.quantitySelected
+                                : 1}
+                              )
+                            </p>
+                          </div>
+                        ))}
+                      </div>
                       <div
                         className="px-2"
                         style={{
                           display: "flex",
-                          justifyContent: "space-around",
+                          justifyContent: "space-between",
                           alignItems: "center",
                         }}
                       >
-                        <p>
-                          Address:
-                          <p className="fw-bold">{order.data().address}</p>
-                        </p>
+                        <div
+                          className="px-2"
+                          style={{
+                            display: "flex",
+                            justifyContent: "space-around",
+                            alignItems: "center",
+                          }}
+                        >
+                          <p>
+                            Address:
+                            <p className="fw-bold">{order.data().address}</p>
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                    <p>
-                      Status:{" "}
-                      <p className="fw-bold text-danger">
-                        {order.data().status}
+                      <p>
+                        Status:{" "}
+                        <p className="fw-bold text-danger">
+                          {order.data().status}
+                        </p>
                       </p>
-                    </p>
-                  </div>
-                </ListGroup.Item>
-              ))
+                    </div>
+                  </ListGroup.Item>
+                ))
             ) : (
-                <ListGroup.Item><div className="m-1 text-center">No orders yet</div></ListGroup.Item>
-              )}
+              <ListGroup.Item>
+                <div className="m-1 text-center">No orders yet</div>
+              </ListGroup.Item>
+            )}
           </ListGroup>
           <hr />
           <p className="d-flex justify-content-between text-light ">
@@ -205,7 +208,8 @@ export default function Chat() {
             </li>
             <li>
               <p className="d-flex mb-2 text-light">
-                2. Save a screenshot of your payment and attach it to your order details.
+                2. Save a screenshot of your payment and attach it to your order
+                details.
               </p>
             </li>
             <li>
@@ -215,11 +219,11 @@ export default function Chat() {
             </li>
             <li>
               <p className="d-flex mb-2 text-light">
-                4. If you have any questions or concerns, please don't hesitate to chat with us. Thank you.
+                4. If you have any questions or concerns, please don't hesitate
+                to chat with us. Thank you.
               </p>
             </li>
           </ol>
-
         </Col>
 
         <Col md={6}>

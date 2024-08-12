@@ -106,7 +106,7 @@ export default function Cart() {
   return (
     <div>
       <Head>
-        <title>Phillipine Card Marketplace</title>
+        <title>Crescendo Learning</title>
         <link rel="icon" href="/pcm.png" />
       </Head>
       <NavigationBar />

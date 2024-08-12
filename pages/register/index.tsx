@@ -69,7 +69,7 @@ export default function Register() {
   return (
     <>
       <Head>
-        <title>Phillipine Card Marketplace</title>
+        <title>Crescendo Learning</title>
         <link rel="icon" href="/logo1.png" />
       </Head>
 
