@@ -67,7 +67,7 @@ export default function NavigationBar() {
 
 
   return (
-    <Navbar bg="light" expand="lg" className="bg-black py-sm-2" id="myNavbar">
+    <Navbar bg="light" expand="lg" className="py-sm-2" id="myNavbar">
       <Container>
         <Link
           href="/"

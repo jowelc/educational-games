@@ -195,11 +195,11 @@ export default function Collection() {
                 </button>
                 <button
                   className={`list-group-item ${
-                    activeFilter === "Books" && "active-tab"
+                    activeFilter === "Stories" && "active-tab"
                   }`}
-                  onClick={() => setActiveFilter("Books")}
+                  onClick={() => setActiveFilter("Stories")}
                 >
-                  Books
+                  Stories
                 </button>
                 <button
                   className={`list-group-item ${
@@ -215,7 +215,7 @@ export default function Collection() {
                   }`}
                   onClick={() => setActiveFilter("Quiz")}
                 >
-                  Quiz
+                  Quiz to test yourself
                 </button>
               </ul>
             </div>
