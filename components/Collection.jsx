@@ -98,12 +98,12 @@ export default function Collection() {
     return (
       <div className="col-md-6 col-lg-4 p-2" key={item.id}>
         <div className="collection-img position-relative d-flex justify-content-center align-items-center">
-          <Link href={`/product/${item.id}`}>
-            {item.data().postImage ? (
+          <Link href={`/${item.id}`}>
+            {item.postImage ? (
               <div className="special-img">
                 <Image
-                  src={item.data().postImage}
-                  alt={item.data().productName}
+                  src={item.postImage}
+                  alt={item.productName}
                   width="300"
                   height="250"
                 />
@@ -114,10 +114,10 @@ export default function Collection() {
           </Link>
         </div>
         <div className="text-start mt-3">
-          {getCardName(item.data().productName)}
+          {getCardName(item.productName)}
           <br />
           <p className="text-capitalize my-1">
-            {getDescription(item.data().description)}
+            {getDescription(item.description)}
           </p>
           <br />
         </div>
@@ -126,17 +126,45 @@ export default function Collection() {
   };
 
   const renderCollectionList = () => {
-    let filteredProducts = productList?.docs;
+    let filteredProducts = [
+      {
+        id: "memory-game",
+        productName: "Memory Game",
+        filter: "games",
+        quantitySelected: 1,
+        description:
+          "The memory game, or concentration, as it is sometimes called, is a popular card game played by children and adults around the world. Good memory is one of the qualities required in order to succeed in it. This, however, is not enough.",
+        postImage: "/memorygame.png",
+      },
+      {
+        id: "colour-game",
+        productName: "Colour Game",
+        filter: "games",
+        quantitySelected: 1,
+        description:
+          "The colour game, or concentration, as it is sometimes called, is a popular card game played by children and adults around the world. Good memory is one of the qualities required in order to succeed in it. This, however, is not enough.",
+        postImage: "/colour.png",
+      },
+      {
+        id: "solar-system",
+        productName: "Solar System 101",
+        filter: "videos",
+        quantitySelected: 1,
+        description:
+          "How many planets are in the solar system? How did it form in the Milky Way galaxy? Learn facts about the solar system’s genesis, plus its planets, moons, and asteroids.",
+        postImage: "/solarsystem.png",
+      },
+    ];
 
     if (activeFilter && activeFilter !== "ALL") {
       filteredProducts = filteredProducts.filter(
-        (product) => product.data().filter === activeFilter
+        (product) => product.filter === activeFilter
       );
     }
 
     if (activePlayerSearch) {
       filteredProducts = filteredProducts.filter((product) => {
-        const { firstName, lastName } = product.data();
+        const { firstName, lastName } = product;
         const filterText = activePlayerSearch.toLowerCase(); // Convert the filter text to lowercase
 
         return (
@@ -179,17 +207,17 @@ export default function Collection() {
                 </button>
                 <button
                   className={`list-group-item ${
-                    activeFilter === "BKN" && "active-tab"
+                    activeFilter === "videos" && "active-tab"
                   }`}
-                  onClick={() => setActiveFilter("BKN")}
+                  onClick={() => setActiveFilter("videos")}
                 >
                   Videos
                 </button>
                 <button
                   className={`list-group-item ${
-                    activeFilter === "BOS" && "active-tab"
+                    activeFilter === "games" && "active-tab"
                   }`}
-                  onClick={() => setActiveFilter("BOS")}
+                  onClick={() => setActiveFilter("games")}
                 >
                   Games
                 </button>

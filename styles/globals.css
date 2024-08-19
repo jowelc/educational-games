@@ -156,7 +156,7 @@ body {
     z-index: 1;
 }
 .footer-bg {
-    background-image: url("/footer.png");
+    background-image: url("/footer.jpg");
     opacity: 1;
     border: 1px solid black; /* Add a 1px black border around the text. You can adjust the border width as needed. */
     padding: 5px;
@@ -457,4 +457,242 @@ p {
 .special-img:hover img {
   transform: scale(1.1);
   transition: transform 0.3s ease-in-out; /* Adds a smooth transition */
+}
+
+
+/* <!-- ---- Memory Card ---- --> */
+  .memory-card {
+    position: relative;
+    cursor: pointer;
+    border: none !important;
+    }
+  
+  .memory-card .front{
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+      border: 2px solid black;
+      position: absolute;
+      transform: rotateY(90deg);
+      transition: all ease-in 0.2s;
+  }
+  
+  .memory-card .front.matched{
+      background-color:  #70ff6b;
+  }
+  
+  .flipped .front {
+      transform: rotateY(0deg);
+      transition-delay: 0.2s;
+  }
+  
+  .memory-card .back{
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+      border: 2px solid white;
+      transition: all ease-in 0.2s;
+      transition-delay: 0.2s;
+  }
+  
+  .flipped .back {
+      transform: rotateY(90deg);
+      transition-delay: 0s;
+  }
+  
+  
+  /* <!-- ---- memory game ---- --> */
+  .memory-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: lightblue;
+    padding: 100px;
+  }
+  
+  .memory-container button {
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    width: 7rem;
+    height: 3rem;
+    font-family: monospace;
+    font-size: 1rem;
+  }
+  
+  .memory-container button:hover {
+    filter: brightness(0.7);
+    cursor: pointer;
+  }
+  
+  .paragraph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; 
+    font-family: monospace;
+    font-size: 1.5rem;
+    background-color: black;
+    border: 2px solid white;
+    width: 10rem;
+    height: 4rem;
+  }
+  
+  .grid {
+    height: 600px;
+    width: 600px;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+  }
+  
+  .grid div img {
+    width: 80%;
+  }
+
+  /* <!-- ---- Memory Card ---- --> */
+  #colour-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    height: 100px;
+    width: 80px;
+}
+
+#colour-cards .card {
+    width: 200px;
+    height: 200px;
+    box-shadow: 0px 2px 5px 0px rgba(146, 146, 146, 0.75);
+    display: flex;
+    flex-direction: column;
+    /* --mask:
+        radial-gradient(47.77px at 50% 68.80px,#000 99%,#0000 101%) calc(50% - 64px) 0/128px 100%,
+        radial-gradient(48.77px at 50% -36.8px,#0000 99%,#000 101%) 50% 32px/128px 100% repeat-x;
+    -webkit-mask: var(--mask);
+    mask: var(--mask); */
+    cursor: pointer;
+}
+
+#colour-cards .card .color {
+    flex: 1;
+    background-color: #26F786;
+
+}
+
+#colour-cards .card .color-text {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    background-color: #FFF;
+    color: red;
+}
+
+/* <!-- ---- GameOver Card ---- --> */
+#overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  /* visibility: hidden;
+  opacity: 0%; */
+  transition: 0.2s opacity ease-in-out;
+}
+
+
+
+#game-over-modal {
+  background-color: rgb(238, 238, 238);
+  color: rgb(32, 32, 32);
+  max-height: 220px;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  /* transform: translate(0%, 50%); */
+  transition: 0.2s transform ease-in-out;
+
+}
+
+#game-over-modal button {
+  font-size: 1.2rem;
+  padding: 15px;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  font-weight: 900;
+  border-radius: 10px;
+  background-color: #d16ba5;
+}
+  
+/* <!-- ---- Stats Card ---- --> */
+#stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+  gap: 10px;
+  color: rgb(32, 32, 32);
+}
+
+#stats h3 {
+  font-weight: 500;
+}
+
+#stats div {
+  display: flex;
+  gap: 20px;
+}
+
+#stats hr {
+  width: 100%;
+  border-radius: 10px;
+  height: 5px;
+  background: linear-gradient(to right, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  border: none;
+}
+
+
+/* <!-- ---- Title Colour Card ---- --> */
+.title h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+.title .first-part {
+
+  background-image: linear-gradient(to right, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);   
+  background-size: 100%;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent; 
+-moz-background-clip: text;
+-moz-text-fill-color: transparent;
+}
+
+.title .second-part {
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+  -webkit-text-stroke:2px #86A8E7;
+}
+
+.title {
+  padding-top: 10px;
 }

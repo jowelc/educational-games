@@ -14,7 +14,11 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="footer-bg py-3">
+    <footer className="footer-bg py-3" style={{
+      position: "absolute",
+      bottom: 0,
+      width: "100%",
+    }}>
       <div className="container">
         <div className="row text-white g-4">
           <div className="col-md-6 col-lg-3">
@@ -56,7 +60,7 @@ export default function Footer() {
               <span className="me-3">
                 <FontAwesomeIcon icon={faEnvelope} height={20} />
               </span>
-              <span className="fw-light text-black">philcardmp@gmail.com</span>
+              <span className="fw-light text-black">learningame@crescendocollective.com</span>
             </div>
             <div className="d-flex justify-content-start align-items-start my-2 text-muted">
               <span className="me-3">
@@ -70,7 +74,7 @@ export default function Footer() {
               <span className="me-3">
                 <FontAwesomeIcon icon={faPhone} height={20} />
               </span>
-              <span className="fw-light text-black">0997 720 0248</span>
+              <span className="fw-light text-black">0987 654 3210</span>
             </div>
           </div>
           <div className="col-md-6 col-lg-3">
@@ -79,7 +83,7 @@ export default function Footer() {
             <ul className="list-unstyled d-flex">
               <li className="text-decoration-none text-muted fs-4 me-4">
                 <Link
-                  href="https://www.facebook.com/philcardmp"
+                  href="https://www.facebook.com"
                   target="_blank"
                   className="text-white text-decoration-none text-muted"
                 >
@@ -92,7 +96,7 @@ export default function Footer() {
               </li>
               <li className="text-decoration-none text-muted fs-4 me-4">
                 <Link
-                  href="https://www.instagram.com/jowel.castaneda"
+                  href="https://www.instagram.com"
                   target="_blank"
                   className="text-white text-decoration-none text-muted"
                 >
@@ -105,7 +109,7 @@ export default function Footer() {
               </li>
               <li className="text-decoration-none text-muted fs-4 me-4">
                 <Link
-                  href="www.tiktok.com/@philcardmp.breaks"
+                  href="www.tiktok.com"
                   target="_blank"
                   className="text-white text-decoration-none text-muted"
                 >

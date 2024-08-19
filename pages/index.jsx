@@ -5,7 +5,6 @@ import Footer from "../components/Footer";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "../firebase";
 import "react-toastify/dist/ReactToastify.css";
-import Login from "./login";
 import { Container, Spinner, Image } from "react-bootstrap";
 
 const Home = () => {
@@ -32,8 +31,8 @@ const Home = () => {
     <div>
       <div className="max-w-7xl mx-auto">
         <Head>
-          <title>Crescendo Learning</title>
-          <link rel="icon" href="/pcm.png" />
+          <title>123Crescendo Learning</title>
+          <link rel="icon" href="/title.png" />
         </Head>
 
         <main>
