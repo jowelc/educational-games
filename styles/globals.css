@@ -556,15 +556,13 @@ p {
     width: 80%;
   }
 
-  /* <!-- ---- Memory Card ---- --> */
+  /* <!-- ---- Colour Card ---- --> */
   #colour-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
     margin-bottom: 20px;
-    height: 100px;
-    width: 80px;
 }
 
 #colour-cards .card {
