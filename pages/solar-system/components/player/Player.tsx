@@ -55,7 +55,7 @@ export const Player: FC<Props> = ({ src }) => {
       }
     }
 
-    return () => {}
+    return () => { }
   }, [element, src]);
 
   useEffect(() => {
@@ -155,3 +155,6 @@ export const Player: FC<Props> = ({ src }) => {
     </StyledContainer>
   );
 };
+
+
+export default Player;

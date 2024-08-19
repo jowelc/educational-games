@@ -42,3 +42,5 @@ export const StripValueWrapper = styled.div`
     }
   }
 `;
+
+export default StripValue;

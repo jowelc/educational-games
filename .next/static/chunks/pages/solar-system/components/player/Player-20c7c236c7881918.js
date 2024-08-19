@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[772],{1705:function(n,_,e){(window.__NEXT_P=window.__NEXT_P||[]).push(["/solar-system/components/player/Player",function(){return e(8137)}])}},function(n){n.O(0,[578,279,137,774,888,179],function(){return n(n.s=1705)}),_N_E=n.O()}]);

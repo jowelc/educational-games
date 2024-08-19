@@ -26,3 +26,5 @@ export class GesturesController {
         return this.lastFingerPositionX;
     }
 }
+
+export default GesturesController;

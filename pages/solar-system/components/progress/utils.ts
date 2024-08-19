@@ -29,3 +29,5 @@ export const calculateCurrentTimeByCursorPosition = (
 
   return Math.min(duration * normalizedPercent, duration);
 };
+
+export default calculateCursorPosition;

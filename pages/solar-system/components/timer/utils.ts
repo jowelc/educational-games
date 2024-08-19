@@ -11,3 +11,5 @@ export const formatCurrentVideoTime = (seconds: number) => {
 
   return `${minutesLabel}:${secondsLabel}`;
 };
+
+export default formatCurrentVideoTime;

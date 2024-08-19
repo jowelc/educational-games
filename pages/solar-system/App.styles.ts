@@ -35,3 +35,5 @@ export const Title = styled.h1`
         margin-bottom: 16px;
     }
 `
+
+export default Container;

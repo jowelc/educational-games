@@ -1,34 +1,197 @@
 {
   "polyfillFiles": [
-    "static/chunks/polyfills.js"
+    "static/chunks/polyfills-c67a75d1b6f99dc8.js"
   ],
-  "devFiles": [
-    "static/chunks/react-refresh.js"
-  ],
-  "ampDevFiles": [
-    "static/chunks/webpack.js",
-    "static/chunks/amp.js"
-  ],
+  "devFiles": [],
+  "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/development/_buildManifest.js",
-    "static/development/_ssgManifest.js"
+    "static/6ayxPwqerYfCn7yHmNRo9/_buildManifest.js",
+    "static/6ayxPwqerYfCn7yHmNRo9/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
     "/": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/index.js"
+      "static/chunks/webpack-f164db4954bac6ec.js",
+      "static/chunks/framework-3b5a00d5d7e8d93b.js",
+      "static/chunks/main-d2a793b6dc23a82a.js",
+      "static/chunks/c16184b3-83896857e0cad074.js",
+      "static/chunks/2cca2479-9b1ac7a3de4337a5.js",
+      "static/chunks/7112840a-a8733e03fefd269e.js",
+      "static/chunks/59235bb1-bc996eca7beeb4e9.js",
+      "static/chunks/664-e432d276bc67604d.js",
+      "static/chunks/466-1e0392b7cefe764e.js",
+      "static/css/cfc5ae0330ceae0c.css",
+      "static/chunks/pages/index-cd2ab30233dc1605.js"
     ],
     "/_app": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/_app.js"
+      "static/chunks/webpack-f164db4954bac6ec.js",
+      "static/chunks/framework-3b5a00d5d7e8d93b.js",
+      "static/chunks/main-d2a793b6dc23a82a.js",
+      "static/css/ebbda6f51c295c30.css",
+      "static/chunks/pages/_app-26968a9a8b6d0acf.js"
     ],
     "/_error": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/_error.js"
+      "static/chunks/webpack-f164db4954bac6ec.js",
+      "static/chunks/framework-3b5a00d5d7e8d93b.js",
+      "static/chunks/main-d2a793b6dc23a82a.js",
+      "static/chunks/pages/_error-8353112a01355ec2.js"
+    ],
+    "/colour-game": [
+      "static/chunks/webpack-f164db4954bac6ec.js",
+      "static/chunks/framework-3b5a00d5d7e8d93b.js",
+      "static/chunks/main-d2a793b6dc23a82a.js",
+      "static/chunks/664-e432d276bc67604d.js",
+      "static/chunks/pages/colour-game-928337275855911b.js"
+    ],
+    "/colour-game/components/Cards": [
+      "static/chunks/webpack-f164db4954bac6ec.js",
+      "static/chunks/framework-3b5a00d5d7e8d93b.js",
+      "static/chunks/main-d2a793b6dc23a82a.js",
+      "static/chunks/pages/colour-game/components/Cards-b0509734039110b0.js"
+    ],
+    "/colour-game/components/GameOver": [
+      "static/chunks/webpack-f164db4954bac6ec.js",
+      "static/chunks/framework-3b5a00d5d7e8d93b.js",
+      "static/chunks/main-d2a793b6dc23a82a.js",
+      "static/chunks/pages/colour-game/components/GameOver-9160e78d3f62caf1.js"
+    ],
+    "/colour-game/components/Stats": [
+      "static/chunks/webpack-f164db4954bac6ec.js",
+      "static/chunks/framework-3b5a00d5d7e8d93b.js",
+      "static/chunks/main-d2a793b6dc23a82a.js",
+      "static/chunks/pages/colour-game/components/Stats-91e30532f17848af.js"
+    ],
+    "/colour-game/components/Title": [
+      "static/chunks/webpack-f164db4954bac6ec.js",
+      "static/chunks/framework-3b5a00d5d7e8d93b.js",
+      "static/chunks/main-d2a793b6dc23a82a.js",
+      "static/chunks/664-e432d276bc67604d.js",
+      "static/chunks/pages/colour-game/components/Title-a9792af6d7151a4f.js"
+    ],
+    "/memory-game": [
+      "static/chunks/webpack-f164db4954bac6ec.js",
+      "static/chunks/framework-3b5a00d5d7e8d93b.js",
+      "static/chunks/main-d2a793b6dc23a82a.js",
+      "static/chunks/664-e432d276bc67604d.js",
+      "static/chunks/pages/memory-game-80bac75a9020757e.js"
+    ],
+    "/memory-game/components/Card/Card": [
+      "static/chunks/webpack-f164db4954bac6ec.js",
+      "static/chunks/framework-3b5a00d5d7e8d93b.js",
+      "static/chunks/main-d2a793b6dc23a82a.js",
+      "static/chunks/pages/memory-game/components/Card/Card-50cdce28fa17afb4.js"
+    ],
+    "/solar-system": [
+      "static/chunks/webpack-f164db4954bac6ec.js",
+      "static/chunks/framework-3b5a00d5d7e8d93b.js",
+      "static/chunks/main-d2a793b6dc23a82a.js",
+      "static/chunks/578-d4dc964df7b4fb24.js",
+      "static/chunks/664-e432d276bc67604d.js",
+      "static/chunks/279-d99e4c4dfb01b4a6.js",
+      "static/chunks/137-01cc5b4d489535e0.js",
+      "static/chunks/pages/solar-system-0374c799fa0f5d53.js"
+    ],
+    "/solar-system/App.styles": [
+      "static/chunks/webpack-f164db4954bac6ec.js",
+      "static/chunks/framework-3b5a00d5d7e8d93b.js",
+      "static/chunks/main-d2a793b6dc23a82a.js",
+      "static/chunks/578-d4dc964df7b4fb24.js",
+      "static/chunks/pages/solar-system/App.styles-47c1538977b5ef0e.js"
+    ],
+    "/solar-system/components/player/Player": [
+      "static/chunks/webpack-f164db4954bac6ec.js",
+      "static/chunks/framework-3b5a00d5d7e8d93b.js",
+      "static/chunks/main-d2a793b6dc23a82a.js",
+      "static/chunks/578-d4dc964df7b4fb24.js",
+      "static/chunks/279-d99e4c4dfb01b4a6.js",
+      "static/chunks/137-01cc5b4d489535e0.js",
+      "static/chunks/pages/solar-system/components/player/Player-20c7c236c7881918.js"
+    ],
+    "/solar-system/components/player/Player.styles": [
+      "static/chunks/webpack-f164db4954bac6ec.js",
+      "static/chunks/framework-3b5a00d5d7e8d93b.js",
+      "static/chunks/main-d2a793b6dc23a82a.js",
+      "static/chunks/578-d4dc964df7b4fb24.js",
+      "static/chunks/pages/solar-system/components/player/Player.styles-b7ac0a2b3a2e8dd1.js"
+    ],
+    "/solar-system/components/progress/Progress": [
+      "static/chunks/webpack-f164db4954bac6ec.js",
+      "static/chunks/framework-3b5a00d5d7e8d93b.js",
+      "static/chunks/main-d2a793b6dc23a82a.js",
+      "static/chunks/578-d4dc964df7b4fb24.js",
+      "static/chunks/pages/solar-system/components/progress/Progress-f1aea0ae19e1e44b.js"
+    ],
+    "/solar-system/components/progress/Progress.styles": [
+      "static/chunks/webpack-f164db4954bac6ec.js",
+      "static/chunks/framework-3b5a00d5d7e8d93b.js",
+      "static/chunks/main-d2a793b6dc23a82a.js",
+      "static/chunks/578-d4dc964df7b4fb24.js",
+      "static/chunks/pages/solar-system/components/progress/Progress.styles-c4ff85818d5fae16.js"
+    ],
+    "/solar-system/components/progress/utils": [
+      "static/chunks/webpack-f164db4954bac6ec.js",
+      "static/chunks/framework-3b5a00d5d7e8d93b.js",
+      "static/chunks/main-d2a793b6dc23a82a.js",
+      "static/chunks/pages/solar-system/components/progress/utils-e7ee61927bf65850.js"
+    ],
+    "/solar-system/components/timer/Timer": [
+      "static/chunks/webpack-f164db4954bac6ec.js",
+      "static/chunks/framework-3b5a00d5d7e8d93b.js",
+      "static/chunks/main-d2a793b6dc23a82a.js",
+      "static/chunks/578-d4dc964df7b4fb24.js",
+      "static/chunks/pages/solar-system/components/timer/Timer-07e6572df8c576bc.js"
+    ],
+    "/solar-system/components/timer/Timer.styles": [
+      "static/chunks/webpack-f164db4954bac6ec.js",
+      "static/chunks/framework-3b5a00d5d7e8d93b.js",
+      "static/chunks/main-d2a793b6dc23a82a.js",
+      "static/chunks/578-d4dc964df7b4fb24.js",
+      "static/chunks/pages/solar-system/components/timer/Timer.styles-2b521395ee8d8cd6.js"
+    ],
+    "/solar-system/components/timer/utils": [
+      "static/chunks/webpack-f164db4954bac6ec.js",
+      "static/chunks/framework-3b5a00d5d7e8d93b.js",
+      "static/chunks/main-d2a793b6dc23a82a.js",
+      "static/chunks/pages/solar-system/components/timer/utils-33955166acac5769.js"
+    ],
+    "/solar-system/components/volume/Volume": [
+      "static/chunks/webpack-f164db4954bac6ec.js",
+      "static/chunks/framework-3b5a00d5d7e8d93b.js",
+      "static/chunks/main-d2a793b6dc23a82a.js",
+      "static/chunks/578-d4dc964df7b4fb24.js",
+      "static/chunks/pages/solar-system/components/volume/Volume-e91bde17292c65fa.js"
+    ],
+    "/solar-system/components/volume/Volume.styles": [
+      "static/chunks/webpack-f164db4954bac6ec.js",
+      "static/chunks/framework-3b5a00d5d7e8d93b.js",
+      "static/chunks/main-d2a793b6dc23a82a.js",
+      "static/chunks/578-d4dc964df7b4fb24.js",
+      "static/chunks/pages/solar-system/components/volume/Volume.styles-7256ef6fc7b22dd9.js"
+    ],
+    "/solar-system/controllers/gesture-controller": [
+      "static/chunks/webpack-f164db4954bac6ec.js",
+      "static/chunks/framework-3b5a00d5d7e8d93b.js",
+      "static/chunks/main-d2a793b6dc23a82a.js",
+      "static/chunks/pages/solar-system/controllers/gesture-controller-3f936647501a1ec5.js"
+    ],
+    "/solar-system/controllers/rectangle-controller": [
+      "static/chunks/webpack-f164db4954bac6ec.js",
+      "static/chunks/framework-3b5a00d5d7e8d93b.js",
+      "static/chunks/main-d2a793b6dc23a82a.js",
+      "static/chunks/pages/solar-system/controllers/rectangle-controller-8640ef4c007b2c0b.js"
+    ],
+    "/solar-system/controllers/video-controller": [
+      "static/chunks/webpack-f164db4954bac6ec.js",
+      "static/chunks/framework-3b5a00d5d7e8d93b.js",
+      "static/chunks/main-d2a793b6dc23a82a.js",
+      "static/chunks/pages/solar-system/controllers/video-controller-3b77c64336908ae4.js"
+    ],
+    "/solar-system/styles/common.styles": [
+      "static/chunks/webpack-f164db4954bac6ec.js",
+      "static/chunks/framework-3b5a00d5d7e8d93b.js",
+      "static/chunks/main-d2a793b6dc23a82a.js",
+      "static/chunks/578-d4dc964df7b4fb24.js",
+      "static/chunks/pages/solar-system/styles/common.styles-ee68f9c4d52cc82e.js"
     ]
   },
   "ampFirstPages": []

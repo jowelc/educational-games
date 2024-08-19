@@ -170,3 +170,5 @@ export class VideoController {
     el.removeEventListener("seeking", this.boundEmitSeekingListeners);
   }
 }
+
+export default VideoController;

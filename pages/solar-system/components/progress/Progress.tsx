@@ -192,3 +192,6 @@ export const Progress: FC<Props> = ({ controller }) => {
     </StripValueWrapper>
   );
 };
+
+
+export default Progress;

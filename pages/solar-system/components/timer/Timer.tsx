@@ -48,3 +48,5 @@ export const Timer: FC<Props> = ({ controller }) => {
 
   return <Time ref={timerRef}>0:00</Time>;
 };
+
+export default Timer;

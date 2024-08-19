@@ -96,3 +96,5 @@ export const Volume: FC<Props> = ({ controller }) => {
     </StyledStripValueWrapper>
   );
 };
+
+export default Volume;

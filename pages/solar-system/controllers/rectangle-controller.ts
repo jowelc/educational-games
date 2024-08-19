@@ -39,3 +39,5 @@ export class RectangleController {
     this.left = domRect.left;
   }
 }
+
+export default RectangleController;
