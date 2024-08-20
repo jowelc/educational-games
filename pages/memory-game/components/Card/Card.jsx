@@ -5,10 +5,10 @@ function Card(props) {
 
   return (
     <div className="memory-card">
-      <div className={props.flipped ? "flipped" : ""}>
+      <div className={props?.flipped ? "flipped" : ""}>
         <img
-          className={`front ${props.card.matched ? "matched" : ""}`}
-          src={props.card.src}
+          className={`front ${props?.card?.matched ? "matched" : ""}`}
+          src={props.card ? props.card.src : null}
           alt="memory-card front"
         />
         <img
