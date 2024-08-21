@@ -2,14 +2,15 @@ import { useEffect, useState } from "react";
 import Card from "./components/Card/Card.jsx";
 import Link from "next/link.js";
 import Head from "next/head.js";
+import AnimatedBg from "../../components/AnimatedBg/index.js";
 
 const initialCards = [
-  { src: "/images/bulbasaur.png", matched: false },
-  { src: "/images/butterfree.png", matched: false },
-  { src: "/images/charmander.png", matched: false },
-  { src: "/images/pidgeotto.png", matched: false },
-  { src: "/images/pikachu.png", matched: false },
-  { src: "/images/squirtle.png", matched: false },
+  { src: "/images/ball.png", matched: false },
+  { src: "/images/star.png", matched: false },
+  { src: "/images/apple.png", matched: false },
+  { src: "/images/car.png", matched: false },
+  { src: "/images/bear.png", matched: false },
+  { src: "/images/owl.png", matched: false },
 ];
 
 function App() {
@@ -81,11 +82,12 @@ function App() {
 
   return (
     <div className="memory-container">
-        <Head>
-          <title>Crescendo Learning</title>
-          <link rel="icon" href="/title.png" />
-        </Head>
-      <div className="flex">
+      <Head>
+        <title>Crescendo Learning</title>
+        <link rel="icon" href="/title.png" />
+      </Head>
+      <AnimatedBg />
+      <div className="flex" style={{ zIndex: 1 }}>
         <button>
           <Link rel="icon" href="/">
             Home
@@ -111,7 +113,9 @@ function App() {
           />
         ))}
       </div>
-      <p className="paragraph">Turns: {turn}</p>
+      <p className="paragraph" style={{ zIndex: 1 }}>
+        Turns: {turn}
+      </p>
     </div>
   );
 }

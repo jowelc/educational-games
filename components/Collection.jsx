@@ -91,7 +91,7 @@ export default function Collection() {
   };
 
   const getDescription = (text) => {
-    return <p className="text-capitalize my-1">{`${text.slice(0, 40)}...`}</p>;
+    return <p className="text-capitalize my-1">{`${text.slice(0, 80)}...`}</p>;
   };
 
   const renderCards = (item) => {
@@ -113,7 +113,10 @@ export default function Collection() {
             )}
           </Link>
         </div>
-        <div className="text-start mt-3">
+        <div
+          className="text-start mt-3"
+          style={{ zIndex: 1, position: "relative" }}
+        >
           {getCardName(item.productName)}
           <br />
           <p className="text-capitalize my-1">
@@ -127,6 +130,15 @@ export default function Collection() {
 
   const renderCollectionList = () => {
     let filteredProducts = [
+      {
+        id: "eduquest-game",
+        productName: "EDUQUEST",
+        filter: "games",
+        quantitySelected: 1,
+        description:
+          "The EDUQUEST game, or concentration, as it is sometimes called, is a popular card game played by children and adults around the world. Good memory is one of the qualities required in order to succeed in it. This, however, is not enough.",
+        postImage: "/eduquest.png",
+      },
       {
         id: "memory-game",
         productName: "Memory Game",
@@ -144,6 +156,15 @@ export default function Collection() {
         description:
           "The colour game, or concentration, as it is sometimes called, is a popular card game played by children and adults around the world. Good memory is one of the qualities required in order to succeed in it. This, however, is not enough.",
         postImage: "/colour.png",
+      },
+      {
+        id: "guess-the-object",
+        productName: "Guess the Object",
+        filter: "games",
+        quantitySelected: 1,
+        description:
+          "The colour guess the object games is a popular card game played by children and adults around the world. Good memory is one of the qualities required in order to succeed in it. This, however, is not enough.",
+        postImage: "/guesstheobject.png",
       },
       {
         id: "solar-system",

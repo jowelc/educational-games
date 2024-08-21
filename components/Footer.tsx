@@ -15,8 +15,7 @@ import {
 export default function Footer() {
   return (
     <footer className="footer-bg py-3" style={{
-      position: "absolute",
-      bottom: 0,
+      // marginTop: "220px",
       width: "100%",
     }}>
       <div className="container">

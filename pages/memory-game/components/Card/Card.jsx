@@ -10,12 +10,15 @@ function Card(props) {
           className={`front ${props?.card?.matched ? "matched" : ""}`}
           src={props.card ? props.card.src : null}
           alt="memory-card front"
+          height="100px"
+          width="50px"
         />
         <img
           className="back"
-          src="/images/card_back.png"
+          src="/images/question-mark-animation.gif"
           alt="card back"
           onClick={() => handleChoice()}
+          height="100px"
         />
       </div>
     </div>

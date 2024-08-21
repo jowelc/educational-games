@@ -2,7 +2,7 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/solar-system": "pages/solar-system.js",
+  "/guess-the-object": "pages/guess-the-object.js",
   "/": "pages/index.js",
-  "/colour-game": "pages/colour-game.js"
+  "/eduquest-game": "pages/eduquest-game.js"
 }

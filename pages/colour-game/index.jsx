@@ -5,6 +5,7 @@ import Cards from "./components/Cards";
 import { useEffect } from "react";
 import GameOver from "./components/GameOver";
 import Head from "next/head";
+import AnimatedBg from "../../components/AnimatedBg";
 
 let overlayStyle = {
   visibility: "hidden",
@@ -72,6 +73,7 @@ function App() {
         <Stats level={level} score={score} highestScore={highestScore} />
       </header>
       <main>
+        <AnimatedBg />
         <Cards
           level={level}
           gameState={gameState}

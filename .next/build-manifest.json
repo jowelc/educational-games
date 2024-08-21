@@ -30,15 +30,15 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/colour-game": [
+    "/eduquest-game": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/colour-game.js"
+      "static/chunks/pages/eduquest-game.js"
     ],
-    "/solar-system": [
+    "/guess-the-object": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/solar-system.js"
+      "static/chunks/pages/guess-the-object.js"
     ]
   },
   "ampFirstPages": []

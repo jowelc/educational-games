@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Title() {
   return (
-    <div className="title">
+    <div className="title" style={{ zIndex: 1 }}>
       <h1>
         <span className="first-part">
           <Link rel="icon" href="/">
