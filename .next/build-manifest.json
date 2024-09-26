@@ -35,10 +35,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/eduquest-game.js"
     ],
-    "/guess-the-object": [
+    "/eduquest-game/MathPage": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/guess-the-object.js"
+      "static/chunks/pages/eduquest-game/MathPage.js"
     ]
   },
   "ampFirstPages": []

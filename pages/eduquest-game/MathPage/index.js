@@ -9,7 +9,6 @@ import ResultPage from "../ResultPage/index";
 
 function MathPage() {
   const { state, dispatch } = useContext(StoreContext);
-  console.log("jowel", state);
   const { gameData, gameFinished, finalScore } = state.math;
 
   useEffect(() => {
